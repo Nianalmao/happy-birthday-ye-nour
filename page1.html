@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HAPPY BIRTHDAY YE NOUUR NHEBEK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+      html,
+      body {
+        padding: 0;
+        margin: 0;
+        background-color: #ff5f9e;
+        font-family: "Shadows Into Light", cursive;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: white;
+        letter-spacing: 3px;
+      }
+
+      img {
+        animation: bounce 1s;
+        max-width: fit-content;
+        border-radius: 20px;
+        border: 10px solid white;
+        display: block;
+        margin: 0 auto;
+      }
+      .imgg {
+        animation: bounce 1s;
+        width: 500px;
+        height: 500px;
+        margin: 0;
+        padding: 0;
+      }
+      .container h1 {
+        margin: 0;
+        padding: 0;
+        margin-bottom: -100px;
+        animation: fade 0.5s;
+      }
+      button {
+        margin: 10px;
+        width: 200px;
+        height: 50px;
+        border: none;
+        border-radius: 20px;
+        color: #ff5f9e;
+        letter-spacing: 2px;
+        font-family: "Tilt Warp", cursive;
+      }
+      button:hover {
+        background-color: transparent;
+        border: 3px solid white;
+        color: white;
+      }
+      .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .footer h1 {
+        color: white;
+        letter-spacing: 2px;
+        font-size: 10pt;
+        order: 1;
+        margin: 0;
+        padding: 0;
+      }
+
+      .footer p {
+        color: white;
+        font-size: 10pt;
+        font-family: monospace;
+        order: 2;
+      }
+
+      #Vmessage {
+        font-family: "Tilt Warp", cursive;
+        visibility: hidden;
+      }
+      @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+      body {
+        background-image: url("Hello Kitty Wallpaper.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: Poppins;
+      }
+
+      .g1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+      }
+
+      .images1 img {
+        width: 150px;
+      }
+
+      .images1 {
+        position: absolute;
+        top: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+      }
+
+      .group1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2em;
+        margin-left: 1em;
+        margin-right: 1em;
+        z-index: 55;
+        margin-top: 2em;
+        opacity: 1;
+      }
+
+      .group1 button {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-family: Poppins;
+        z-index: 4444;
+        border: 2px solid red;
+      }
+
+      .group1 button:hover {
+        background: white;
+        cursor: pointer;
+        border: 2px solid black;
+      }
+
+      .ask {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 5px;
+        z-index: 5555555;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        text-align: center;
+        margin-top: em;
+        position: relative;
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #btn1 {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-family: Poppins;
+        border: 2px solid black;
+        opacity: 0;
+      }
+
+      #btn1:hover {
+        background: white;
+        border: 2px solid black;
+        cursor: pointer;
+      }
+
+      #btn2:hover {
+        background: white;
+        border: 2px solid black;
+      }
+
+      #btn2 {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-family: Poppins;
+        border: 2px solid red;
+        position: relative;
+        right: 8em;
+      }
+
+      .crush {
+        font-size: 25px;
+        margin-bottom: 2em;
+        font-weight: bold;
+        color: red;
+      }
+
+      #hands {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 5em;
+        left: 3em;
+        animation: bounce2 2s ease infinite;
+        opacity: 0;
+      }
+
+      #sadman {
+        transform: translateY(-2em);
+        opacity: 0;
+        position: relative;
+        right: 10em;
+        filter: brightness(86%);
+        width: 160px;
+        height: 160px;
+      }
+
+      #hang {
+        transform: translateY(-4em);
+        opacity: 0;
+      }
+
+      #frog {
+        transform: translateY(-4em);
+        opacity: 0;
+      }
+
+      #hahahuhu {
+        opacity: 0;
+      }
+
+      #sadcat {
+        opacity: 0;
+      }
+
+      #sadboi {
+        opacity: 0;
+        position: relative;
+        right: 20em;
+      }
+
+      #crying {
+        position: relative;
+        left: 10em;
+        opacity: 0;
+        width: 160px;
+        height: 160px;
+        filter: brightness(90%);
+      }
+
+      #sadsad {
+        opacity: 0;
+      }
+
+      @keyframes bounce2 {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+
+        40% {
+          transform: translateY(-20px);
+        }
+
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+
+      /*BUTTONS OPACITY*/
+
+      #btt1 {
+        opacity: 0;
+      }
+
+      #btt2 {
+        opacity: 0;
+      }
+
+      #btt3 {
+        opacity: 0;
+      }
+
+      #btt4 {
+        opacity: 0;
+      }
+
+      #btt5 {
+        opacity: 0;
+      }
+
+      #btt6 {
+        opacity: 0;
+      }
+
+      #btt7 {
+        opacity: 0;
+      }
+
+      #btt8 {
+        opacity: 0;
+      }
+
+      #btt9 {
+        opacity: 0;
+      }
+
+      #btt10 {
+        opacity: 0;
+      }
+
+      #btt11 {
+        opacity: 0;
+      }
+
+      #btt12 {
+        opacity: 0;
+      }
+
+      /*BUTTONS2 OPACITY*/
+      #bbtt1 {
+        opacity: 0;
+      }
+
+      #bbtt2 {
+        opacity: 0;
+      }
+
+      #bbtt3 {
+        opacity: 0;
+      }
+
+      #bbtt4 {
+        opacity: 0;
+      }
+
+      #bbtt5 {
+        opacity: 0;
+      }
+
+      #bbtt6 {
+        opacity: 0;
+      }
+
+      #bbtt7 {
+        opacity: 0;
+      }
+
+      #bbtt8 {
+        opacity: 0;
+      }
+
+      #bbtt9 {
+        opacity: 0;
+      }
+
+      #bbtt10 {
+        opacity: 0;
+      }
+
+      #bbtt11 {
+        opacity: 0;
+      }
+
+      #bbtt12 {
+        opacity: 0;
+      }
+
+      .fff {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      p span {
+        font-size: 25px;
+      }
+      #niana {
+        border: solid black 2px;
+        font-size: 15px;
+        font-weight: bold;
+        font-family: poppins;
+        width: 85px;
+        height: 34px;
+        margin-right: 200px;
+      }
+      #niana:hover {
+        cursor: pointer;
+        border: solid rgb(255, 0, 0) 2px;
+      }
+
+      @keyframes fade {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.1;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-30px);
+        }
+        60% {
+          transform: translateY(-15px);
+        }
+      }
+
+      @media screen and (max-width: 479px) {
+        /* for iPhone 4 and below */
+        img {
+          width: 60%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>hel l jweb</h1>
+      <img class="imgg" id="env" src="post-close.png" alt="" />
+      <button id="open" onclick='changeImage("post.png");'>7EL</button>
+      <button id="Vmessage" onclick="view()">3AWD ENZEL MARA OKHRA HAHA</button>
+    </div>
+    <div class="footer">
+      <h1>CREATED BY NIANA</h1>
+      <p>All Right Reserved 2023</p>
+    </div>
+
+    <script>
+      function changeImage(a) {
+        document.getElementById("env").src = a;
+        document.getElementById("Vmessage").style.visibility = "visible";
+        document.getElementById("open").style.visibility = "hidden";
+      }
+
+      function view() {
+        window.location.href = "letter.html";
+      }
+    </script>
+  </body>
+</html>
